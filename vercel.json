@@ -1,14 +1,15 @@
 {
     "builds": [
       {
-        "src": "dewey_random.py",
-        "use": "@streamlit/vercel-build@0.1.3"
+        "src": "vercel_app.py",
+        "use": "@vercel/python"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "dewey_random.py"
+        "dest": "vercel_app.py"
       }
     ]
   }
+  
